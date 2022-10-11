@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<script type= "text/javascript">
+  function innerHTMLTest(){
+     var randValNode = document.getElementById("rand-val"); //id에 해당하는 DOM
+        randValNode.innerHTML = "<b><font color='red'>"+Math.random()+"</font></b>";
+  } //id에 출력
+</script>
+
+<body>
+  <div id="rand-val">Let's generate random Value</div>
+ <button onclick="innerHTMLTest()">Generate</button>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+/*div{
+  color: rgb(45, 27, 175);
+  background-color: rgb(34, 198, 210);
+  font-size: 150px;
+}*/
+
+span{
+  /*background-color: black;
+  color: red;*/
+  font-size: 50px;
+}
+
+table{
+  width:100%;
+  border: 1px solid;
+  border-collapse: collapse;
+}
+/*행*/
+tr{
+  border: 3px solid green;
+}
+/*열*/
+td{
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+.dong{
+  color: rgb(24, 87, 223);
+}
+.baek{
+  color: rgb(18, 200, 116);
+}
+.woori{
+  color: coral;
+}
+#moo{
+  background-color: green;
+}
+ 

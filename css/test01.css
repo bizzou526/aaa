@@ -1,0 +1,31 @@
+body{
+  height: 1500px;
+}
+.parent{
+  width: 700px;
+  height: 500px;
+  background-color:royalblue;
+  margin: 20px;
+  overflow: scroll;
+  
+}
+.child{
+  width: 500px;
+  height: 300px;
+  background-color: orange;
+  opacity: 0.8;
+  font-size: 30px;
+  font-style: italic;
+  font-family: cursive fantasy;
+  text-align: center;
+  text-decoration: line-through;
+  background-image: url("/images/doge.jpg");
+  background-size: contain;
+  /*background-repeat: no-repeat;*/
+  background-attachment: scroll;
+}
+.box{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
