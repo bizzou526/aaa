@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>	
+	<head>
+		<title>Clock</title>
+		<script>
+			// 이벤트를 연결합니다.
+			window.onload = function () {
+				// 변수를 선언합니다.
+				var clock = document.getElementById('clock');
+
+				// 1초마다 함수를 실행합니다.
+				setInterval(function () {
+					var now = new Date();
+          let year = now.getFullYear();
+          let month = now.getMonth()+1; 
+          let day = now.getDay()+9;
+          var hour = now.getHours();
+          let minutes = now.getMinutes();
+          let seconds = now.getSeconds();
+
+
+          if( hour > 12){
+            var aaa='';
+            aaa = hour-12;
+
+            document.getElementById("clock").innerHTML = year+'년 '+month+'월 '+day+'일 '+'오후 '+aaa+'시 '+minutes+'분 '+seconds+'초 '
+          }else{
+					  document.getElementById("clock").innerHTML = year+'년 '+month+'월 '+day+'일 '+'오전 '+hour+'시 '+minutes+'분 '+seconds+'초 '
+        }
+
+				}, 1000);
+			};
+		</script>
+	</head>
+	<body>
+		<h1 id="clock"></h1>
+	</body>
+</html>

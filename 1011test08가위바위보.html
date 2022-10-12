@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Insert title here</title>
+
+ 
+
+</head>
+
+<body>
+
+<script type="text/javascript">
+
+ 
+
+	
+
+	var game = prompt("가위 , 바위 , 보 중 선택하세요.","");
+
+	var gameNum;
+
+ 
+
+	switch (game) { //game의 값을 받습니다.
+
+ 
+
+		case "가위": //game의 값이 "가위"라면
+
+ 
+
+			gameNum = 1; 
+
+			break; //switch문을 멈춤.
+
+				
+
+		case "바위": //game의 값이 "바위"라면
+
+ 
+
+			gameNum = 2; 
+
+			break;  //switch문을 멈춤.
+
+ 
+
+		case "보": //game의 값이 "보"라면
+
+ 
+
+			gameNum = 3; 
+
+			break; //switch문을 멈춤.
+
+ 
+
+default: alert("가위, 바위, 보만 입력하세요."); //case문에서 해당되지 않는다면 실행.
+
+ 
+
+	location.reload(); //새로고침
+
+ 
+
+}
+
+ 
+
+	var com = Math.ceil(Math.random() * 3); //다른 방법??
+
+			
+
+			
+
+ 
+
+		if(gameNum == com) {
+
+			document.write("<h2> 정답은 ", game, " 였습니다. 맞추셨습니다!!");
+
+		} 
+
+		else{
+
+			 document.write("<h2>아쉽게도 못 맞추셨습니다.!");
+
+		}
+
+		document.write("사람:", gameNum, "컴퓨터:", com);
+
+ 
+
+</script>
+
+ 
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function(){
+            const btn = document.querySelector('button');
+            const h2 = document.querySelector('h2');
+            let arr = ['가위','바위','보'];
+            btn.addEventListener('click',function(){
+                let num = Math.round(Math.random() * (arr.length-1));
+                h2.innerHTML = arr[num];
+                console.log(num);
+            })
+        }
+    </script>
+
+</head>
+<body>
+    <button>시작</button>
+    <h2 class="text"></h2>
+
+</body>
+</html>
