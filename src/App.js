@@ -1,8 +1,9 @@
 /*import {Component} from 'react';
 import React from 'react';
 import Counter from "./Counter";
-import Say from "./Say";*/
-import EventPractice from "./EventPractice";
+import Say from "./Say";
+import EventPractice from "./EventPractice";*/
+import ValidationSample from "./ValidationSample";
 
 /*class MyComponent extends Component {
   render(){
@@ -31,8 +32,14 @@ export default App;*/
 };
 export default App;*/
 
-const App =()=> {
+/*const App =()=> {
   return <EventPractice/>;
 };
+export default App;*/
+
+const App = () => {
+  return <ValidationSample/>;
+};
+
 export default App;
 
